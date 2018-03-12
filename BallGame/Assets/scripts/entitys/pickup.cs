@@ -19,7 +19,7 @@ public class pickup : MonoBehaviour {
     {
         GameObject player = GameObject.Find("Player");
         Movement p = (Movement)player.GetComponent(typeof(Movement));
-        p.pickups++;
+        p.pickups = p.pickups + 5;
         Destroy(this.gameObject);
 
     }
