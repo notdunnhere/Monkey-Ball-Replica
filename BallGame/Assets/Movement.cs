@@ -3,6 +3,20 @@
 public class Movement : MonoBehaviour {
 
     public Rigidbody body;
+    public int pickups = 0;
+
+    public void PickUp()
+    {
+        pickups++;
+
+    }
+
+    int getPickUps()
+    {
+        return pickups;
+
+    }
+
 
 	// Use this for initialization
 	void Start () {
