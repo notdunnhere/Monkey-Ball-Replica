@@ -15,7 +15,7 @@ public class pickup : MonoBehaviour {
 
     }
 
-    void OnCollisionEnter(Collision collision)
+    void OnTriggerEnter(Collider other)
     {
         GameObject player = GameObject.Find("Player");
         Movement p = (Movement)player.GetComponent(typeof(Movement));
@@ -23,6 +23,7 @@ public class pickup : MonoBehaviour {
         Destroy(this.gameObject);
 
     }
+
 
 
 }
